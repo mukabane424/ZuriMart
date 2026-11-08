@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+
+    {% load static %}
+    
+</head>
+<body>
+
+    <h1>About Us</h1>
+
+    <a href="{% url 'services' %}">Our Services</a>
+    <br>
+    <a href="{% url 'index' %}">Homepage</a>
+    <br>
+    <a href="{% url 'contact' %}">Contact Us</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod nulla sit quibusdam fuga quidem hic officiis aliquam eaque fugiat incidunt adipisci dicta earum optio exercitationem, quia atque vitae! Eveniet?
+    Totam accusantium, suscipit cupiditate praesentium reiciendis sed nobis perferendis! Ducimus consequuntur deleniti rerum officia impedit? Repudiandae amet laborum fugiat hic laudantium obcaecati praesentium provident quis eligendi? Officiis sunt quasi alias.</p>
+
+    <img src="{% static 'images/plane.png' %}" alt="">
+    
+</body>
+</html>

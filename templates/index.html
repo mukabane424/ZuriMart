@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <style>
+
+        img{
+            width: 300px;
+            height: 350px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 style="text-align: center;">Welcome to ZuriMart</h1>
+
+    <a href="{% url 'contact' %}">Contact Us</a>
+     <br>
+    <a href="{% url 'about' %}">About Us</a>
+    <br>
+    <a href="{% url 'services' %}">Our Services</a>
+    <br>
+    <a href="{% url 'login' %}">Login Page</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt nemo perspiciatis repudiandae suscipit, vel esse similique soluta minus accusamus quaerat itaque obcaecati corporis facilis, ratione ducimus exercitationem impedit sequi.
+    Cum quasi at soluta, voluptates commodi optio vero quas nulla aperiam cumque, repellat perspiciatis iusto mollitia porro officiis labore quam a, delectus iure. Cumque numquam tempore, doloremque sit facere soluta.
+    Recusandae eaque numquam obcaecati nulla dicta nobis architecto ullam excepturi iste laborum amet a non facere aspernatur quas corrupti illo tempore pariatur mollitia incidunt, quis facilis? Nisi debitis at maiores?</p>
+
+    <img src="{% static 'images/bag.png'  %}" alt="">
+
+    <br><br>
+
+    <button>View More</button>
+    
+</body>
+</html>

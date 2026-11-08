@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <script src=" {% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+
+    <h1 class="text-center text-warning">Contact Us</h1>
+
+    <a href="{% url 'index' %}">Homepage</a>
+    <br>
+    <a href="{% url 'about' %}">About Us</a>
+    <br>
+    <a href="{% url 'services' %}">Our Services</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti officiis nihil qui, vitae adipisci iusto voluptatum error, ratione vero, dolorem dolor voluptates. Aspernatur reprehenderit odit autem fugiat sequi accusamus dolor!
+    Labore, quaerat commodi. Dignissimos commodi error quasi atque perspiciatis unde exercitationem a, nesciunt at assumenda inventore odit in autem debitis harum quas sunt vero ex accusantium asperiores ab. Tempora, excepturi?</p>
+     <br><br> 
+    <table class="table table-bordered border-dark border-4">
+
+        <tr>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </tr>
+
+         
+        <tr>
+            <td>Ariana May</td>
+            <td>may@gmail.com</td>
+            <td>0736386839</td>
+        </tr>
+
+        
+        <tr>
+            <td>John Wekesa</td>
+            <td>john@gmail.com</td>
+            <td>0755386438</td>
+        </tr>
+
+        
+        <tr>
+            <td>Samantha Debbie</td>
+            <td>debbiek@gmail.com</td>
+            <td>0702388418</td>
+        </tr>
+
+         <tr>
+            <td>Mark Doe</td>
+            <td>mark@gmail.com</td>
+            <td>0756386438</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>

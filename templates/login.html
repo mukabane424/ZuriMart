@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+        {% load static %} 
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <style>
+    
+    .custom-container {
+      max-width: 450px;
+    }
+    .custom-border-box {
+      border: 1px solid #6c757d;
+      padding: 20px;
+    }
+    
+    .form-control:focus, .form-check-input:focus {
+      border-color: #ffda6a;
+      box-shadow: 0 0 0 0.25rem rgba(255, 229, 104, 0.5);
+    }
+  </style>
+    
+</head>
+<body class="bg-white py-5">
+
+  <div class="container custom-container">
+    
+    <h1 class="text-center h2 mb-1 fw-bold">Contact Form</h1>
+    <br>
+    <p class="text-center text-muted small mb-4">Please enter your details:</p>
+
+    
+    <div class="custom-border-box">
+      <p class="small mb-3">Required fields are marked with an asterisk.</p>
+
+      <form>
+        
+        <div class="row align-items-center mb-2">
+          <label for="firstname" class="col-sm-4 col-form-label small">*First name:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control form-control-sm" id="firstname" required>
+          </div>
+        </div>
+
+       
+        <div class="row align-items-center mb-2">
+          <label for="lastname" class="col-sm-4 col-form-label small">*Last name:</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control form-control-sm" id="lastname" required>
+          </div>
+        </div>
+
+        
+        <div class="row align-items-center mb-2">
+          <label for="email" class="col-sm-4 col-form-label small">*Email:</label>
+          <div class="col-sm-8">
+            <input type="email" class="form-control form-control-sm" id="email" required>
+          </div>
+        </div>
+
+        
+        <div class="row align-items-center mb-2">
+          <label for="telephone" class="col-sm-4 col-form-label small">Tel:</label>
+          <div class="col-sm-8">
+            <input type="tel" class="form-control form-control-sm" id="telephone">
+          </div>
+        </div>
+
+        
+        <div class="row align-items-center mb-2">
+          <label for="fax" class="col-sm-4 col-form-label small">Fax:</label>
+          <div class="col-sm-8">
+            <input type="tel" class="form-control form-control-sm" id="fax">
+          </div>
+        </div>
+
+        
+        <div class="row align-items-center mb-3">
+          <label for="mobile" class="col-sm-4 col-form-label small">Mob:</label>
+          <div class="col-sm-8">
+            <input type="tel" class="form-control form-control-sm" id="mobile">
+          </div>
+        </div>
+
+       
+        <div class="row align-items-center mb-3">
+          <label for="dob" class="col-sm-4 col-form-label small">*Date of Birth:</label>
+          <div class="col-sm-8">
+            <input type="date" class="form-control form-control-sm" id="dob" required>
+          </div>
+        </div>
+
+        
+        <fieldset class="border p-2 mb-3">
+          <legend class="float-none w-auto px-2 small mb-0">Gender*</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+            <label class="form-check-label small" for="male">Male</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label small" for="female">Female</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="nonbinary" value="non-binary">
+            <label class="form-check-label small" for="nonbinary">Non-binary</label>
+          </div>
+        </fieldset>
+
+        
+        <div class="mb-3">
+          <label for="comment" class="form-label small mb-1">Leave a comment:</label>
+          <textarea class="form-control form-control-sm" id="comment" rows="4"></textarea>
+        </div>
+
+        
+        <button type="submit" class="btn btn-sm btn-light border shadow-sm">Submit</button>
+      </form>
+    </div>
+
+</div>
+    
+</body>
+</html>
